@@ -50,9 +50,19 @@ img {
 	font-size: 1.25em;
 }
 
+.name,
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
 .name a,
 .main-nav a {
+	padding: 10px 15px;
 	text-align: center;
+	display: block;
 }
 
 .main-nav a {
@@ -90,7 +100,18 @@ img {
 
 @media (min-width: 769px) {
 
+	/* ---- Navigation ---- */
+	.name {
+		float: left;
+	}
 
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		float: left;
+	}
 
 	/* ---- Float clearfix ---- */
 
