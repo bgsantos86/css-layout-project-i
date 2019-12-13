@@ -141,7 +141,7 @@ img {
 		padding: 2em;
 	}
 
-	/* Collums */
+	/* Two Collums */
 
   .col {
     float: left;
@@ -150,15 +150,15 @@ img {
   }
 
   .primary {
-    width: 40%;
+    width: 50%;
   }
 
   .secondary {
-    width: 30%;
+    width: 50%;
 	}
 	
 	.tertiary {
-		width: 30%;
+		width: 100%;
 	}
 
 	/* ---- Float clearfix ---- */
@@ -169,4 +169,20 @@ img {
 		clear: both;
 	}
 
+}
+
+@media (min-width: 1024px) {
+	
+	/* Three Collums */
+	.primary {
+    width: 40%;
+  }
+
+  .secondary {
+    width: 30%;
+	}
+	
+	.tertiary {
+		width: 30%;
+	}
 }
