@@ -77,15 +77,22 @@ img {
 
 /* ---- Layout Containers ---- */
 
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
 .banner {
 	color: #fff;
 	background: #3acec2;
+	margin-bottom: 2em;
 }
 
 .main-footer {
 	background: #d9e4ea;
 	padding: 2em 0;
 	margin-top: 30px;
+	text-align: center;
 }
 
 /* ---- Page Elements ---- */
@@ -94,11 +101,26 @@ img {
 	width: 190px;
 }
 
+.headline {
+	margin-bottom: 0;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
+
+/* ---- Conteiner ---- */
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	.container {
+		width: 85%;
+		max-width: 1150px;
+    margin: 0 auto;
+  }
 
 	/* ---- Navigation ---- */
 	.name {
@@ -111,6 +133,32 @@ img {
 
 	.main-nav li {
 		float: left;
+	}
+
+	/* Banner */
+	.banner {
+		text-align: center;
+		padding: 2em;
+	}
+
+	/* Collums */
+
+  .col {
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .primary {
+    width: 40%;
+  }
+
+  .secondary {
+    width: 30%;
+	}
+	
+	.tertiary {
+		width: 30%;
 	}
 
 	/* ---- Float clearfix ---- */
